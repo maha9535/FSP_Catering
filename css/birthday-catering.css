@@ -1,0 +1,237 @@
+﻿/* BIRTHDAY CATERING PAGE STYLES */
+
+.birthday-intro {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.intro-content h2 {
+    font-size: 2.8rem;
+    color: var(--primary-green);
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.intro-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--primary-green);
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+/* DUAL CARDS GRID */
+.dual-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.info-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 5px 25px var(--shadow-green);
+    border: 1px solid var(--shadow-green);
+}
+
+.info-card h3 {
+    font-size: 1.6rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card ul li {
+    color: var(--primary-green);
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.info-card ul li::before {
+    content: "•";
+    color: var(--primary-green);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+
+.benefits-header {
+    text-align: center;
+    margin-bottom: 0;
+    background: linear-gradient(rgba(0, 59, 92, 0.7), rgba(0, 59, 92, 0.7)), url('https://images.unsplash.com/photo-1530103043960-ef38714abb15?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 40px 180px;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.benefits-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.benefits-header p {
+    font-size: 1.25rem;
+    max-width: 850px;
+    margin: 0 auto;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+/* BENEFITS GRID */
+.birthday-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: -120px;
+    padding: 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.benefit-item {
+    background: #fff;
+    padding: 40px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px var(--shadow-green);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--shadow-green);
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.benefit-item p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+    font-weight: 500;
+}
+
+/* FAQ SECTION */
+.faq-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+}
+
+.faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow-green);
+    border: 1px solid var(--shadow-green);
+}
+
+.faq-question {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-green);
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #111111;
+    opacity: 0.8;
+    line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+    padding-bottom: 25px;
+    max-height: 200px;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 992px) {
+    .dual-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .birthday-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .birthday-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .benefits-header h2 {
+        font-size: 2rem;
+    }
+}

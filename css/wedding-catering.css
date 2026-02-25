@@ -1,0 +1,228 @@
+﻿/* WEDDING CATERING PAGE STYLES */
+
+.wedding-intro {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.intro-content h2 {
+    font-size: 2.5rem;
+    color: #111111;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.intro-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #111111;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: var(--primary-green);
+}
+
+.highlight.bold {
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+/* ACTION CARDS */
+.action-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.action-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 10px 30px var(--shadow-green);
+    border: 1px solid var(--shadow-green);
+}
+
+.action-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-green);
+}
+
+.action-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.action-card li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    color: var(--primary-green);
+}
+
+.action-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/* PREMIUM BENEFITS GRID */
+.premium-benefits {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 59, 92, 0.7), rgba(0, 59, 92, 0.7)), url('https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&q=80&w=1600');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.benefits-header {
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.benefits-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+}
+
+.benefits-header p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.benefit-item {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: #111111;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--shadow-green);
+    box-shadow: 0 10px 30px var(--shadow-green);
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.benefit-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* FAQ SECTION */
+.faq-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+}
+
+.faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow-green);
+    border: 1px solid var(--shadow-green);
+}
+
+.faq-question {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: #111111;
+    transition: background 0.3s ease;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: var(--primary-green);
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    padding-bottom: 25px;
+    max-height: 200px;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 992px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+
+    .benefits-header h2 {
+        font-size: 2rem;
+    }
+}

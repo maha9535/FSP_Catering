@@ -1,0 +1,158 @@
+﻿.thank-you-header {
+    background-color: var(--primary-green);
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.thank-you-header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.thank-you-content {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.thank-you-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-green);
+    border: 1px solid var(--shadow-green);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 60px;
+    text-align: center;
+}
+
+.welcome-title {
+    color: var(--primary-green);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: var(--primary-green);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: var(--shadow-green);
+    margin: 30px 0;
+}
+
+.specialization-text {
+    font-size: 1.1rem;
+    color: var(--primary-green);
+    margin-bottom: 40px;
+}
+
+.specialization-text .highlight {
+    color: var(--primary-green);
+    font-weight: 800;
+}
+
+.consultation-section {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.consultation-section h3 {
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.consultation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.consultation-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    color: var(--primary-green);
+}
+
+.consultation-list li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-size: 0.8rem;
+    top: 3px;
+}
+
+.consultation-list li strong {
+    color: var(--primary-green);
+}
+
+.payment-details {
+    background-color: var(--bg-white);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: left;
+    border: 1px dashed var(--primary-green);
+}
+
+.payment-details h4 {
+    font-size: 1.2rem;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+}
+
+.gpay-info {
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.gpay-info span {
+    color: var(--primary-green);
+    font-weight: 900;
+}
+
+.payment-details .sub-text {
+    color: var(--primary-green);
+    opacity: 0.7;
+    font-size: 0.95rem;
+}
+
+.closing-quote {
+    font-style: italic;
+    color: var(--primary-green);
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 40px 20px;
+    }
+
+    .welcome-title {
+        font-size: 1.5rem;
+    }
+
+    .gpay-info {
+        font-size: 1.4rem;
+    }
+}

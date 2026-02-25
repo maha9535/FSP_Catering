@@ -1,0 +1,218 @@
+﻿:root {
+    --primary-sky: #66BB6A;
+    --text-deep-blue: #1B5E20;
+    --bg-white: #ffffff;
+    --text-muted: #4a90e2;
+}
+
+/* SERVICES PAGE STYLES */
+
+.page-header {
+    background-color: var(--primary-green);
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #111111;
+}
+
+.breadcrumb .current {
+    color: #fff;
+    font-weight: 600;
+}
+
+.breadcrumb .separator {
+    color: #fff;
+}
+
+/* DECORATIVE ELEMENTS */
+
+.header-decor {
+    position: absolute;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.header-decor.dots {
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(#fff 2px, transparent 2px);
+    background-size: 20px 20px;
+    left: -50px;
+    bottom: -50px;
+    z-index: 1;
+}
+
+.header-decor.swirl {
+    width: 300px;
+    height: 300px;
+    right: -50px;
+    top: -50px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M10,50 Q25,25 50,50 T90,50" fill="none" stroke="%23ffffff" stroke-width="0.5"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 60px 0;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* SERVICES GRID SECTION */
+.services-grid-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow-subtle);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-light);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px var(--shadow-subtle);
+    border-color: #111111;
+}
+
+.service-img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    /* Fallback color */
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.service-card:hover .service-img img {
+    transform: scale(1.1);
+}
+
+.service-info {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-info h3 {
+    font-size: 1.6rem;
+    color: #111111;
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.service-info h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--primary-green);
+    transition: width 0.3s ease;
+}
+
+.service-card:hover .service-info h3::after {
+    width: 60px;
+}
+
+.service-info p {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.read-more:hover {
+    opacity: 0.8;
+    transform: translateX(5px);
+}
+
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .services-grid-section {
+        padding: 60px 0;
+    }
+
+    .service-img {
+        height: 220px;
+    }
+}
