@@ -1,6 +1,6 @@
 ﻿.thank-you-header {
     background-color: var(--primary-green);
-    padding: 60px 0;
+    padding: 100px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -8,9 +8,23 @@
 }
 
 .thank-you-header h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #fff;
     margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.thank-you-header .breadcrumb,
+.thank-you-header .breadcrumb a,
+.thank-you-header .breadcrumb .current,
+.thank-you-header .breadcrumb .separator {
+    color: #fff;
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+.thank-you-header .breadcrumb a:hover {
+    color: #111111;
 }
 
 .thank-you-content {

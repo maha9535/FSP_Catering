@@ -12,7 +12,7 @@
 
 .intro-content h2 {
     font-size: 2.8rem;
-    color: var(--primary-green);
+    color: #111111;
     margin-bottom: 30px;
     font-weight: 800;
 }
@@ -20,7 +20,7 @@
 .intro-content p {
     font-size: 1.15rem;
     line-height: 1.8;
-    color: var(--primary-green);
+    color: #111111;
     margin-bottom: 25px;
 }
 
@@ -44,6 +44,7 @@
     text-align: left;
     box-shadow: 0 5px 25px var(--shadow-green);
     border: 1px solid var(--shadow-green);
+    margin: 30px;
 }
 
 .info-card h3 {
@@ -133,7 +134,7 @@
 
 .benefit-icon {
     font-size: 2.5rem;
-    color: var(--primary-green);
+    color: #111111;
     margin-bottom: 20px;
 }
 
@@ -183,7 +184,7 @@
     cursor: pointer;
     font-weight: 700;
     font-size: 1.2rem;
-    color: var(--primary-green);
+    color: #111111;
 }
 
 .faq-toggle {
@@ -198,7 +199,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
     background-color: #fff;
-    color: #111111;
+    color: var(--primary-green);
     opacity: 0.8;
     line-height: 1.7;
 }

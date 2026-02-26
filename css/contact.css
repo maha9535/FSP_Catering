@@ -65,7 +65,7 @@
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 340px;
+    grid-template-columns: 340px 1fr;
     gap: 40px;
     align-items: start;
 }
@@ -83,6 +83,8 @@
     border-radius: 12px;
     box-shadow: 0 4px 20px var(--shadow-green);
     border: 1px solid var(--shadow-green);
+    max-width: 600px;
+    width: 100%;
 }
 
 .contact-form-card h2 {

@@ -35,6 +35,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 80px;
+    margin: 60px;
 }
 
 .info-card {
@@ -48,13 +49,13 @@
 
 .info-card h3 {
     font-size: 1.6rem;
-    color: #111111;
+    color: var(--primary-green);
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .info-card p {
-    color: #444;
+    color: var(--primary-green);
     line-height: 1.7;
     font-size: 1.1rem;
     margin: 0;
@@ -112,7 +113,7 @@
 
 .benefit-icon {
     font-size: 2.5rem;
-    color: var(--primary-green);
+    color: #111111;
     margin-bottom: 20px;
 }
 
@@ -176,7 +177,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
     background-color: #fff;
-    color: #444;
+    color: var(--primary-green);
     opacity: 0.9;
     line-height: 1.7;
 }

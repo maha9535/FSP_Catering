@@ -57,7 +57,8 @@
             <div class="thank-you-card">
                 <div class="card-body">
                     <h2 class="welcome-title">🌟 Welcome to Gokula Catering World 🌟</h2>
-                    <p class="intro-text">Thank you for reaching out to us — where every celebration is curated with
+                    <p id="thank-you-message" class="intro-text">Thank you for reaching out to us — where every
+                        celebration is curated with
                         elegance, excellence, and impeccable taste.</p>
 
                     <hr class="divider">
@@ -146,6 +147,23 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const type = urlParams.get('type');
+            const messageElement = document.getElementById('thank-you-message');
+
+            if (type === 'career') {
+                messageElement.textContent = 'Thank you for applying to join our team! We have received your application and our HR team will review it shortly.';
+                document.querySelector('.specialization-text').style.display = 'none';
+                document.querySelector('.consultation-section').style.display = 'none';
+                document.querySelector('.payment-details').style.display = 'none';
+                document.querySelector('.closing-quote').textContent = 'We look forward to potentially having you as part of the Gokula Catering family.';
+            } else if (type === 'contact') {
+                messageElement.textContent = 'Thank you for reaching out to us — where every celebration is curated with elegance, excellence, and impeccable taste.';
+            }
+        });
+    </script>
     <script src="js/home.js"></script>
 </body>
 

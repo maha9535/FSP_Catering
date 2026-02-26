@@ -44,11 +44,12 @@
     text-align: left;
     box-shadow: 0 5px 25px var(--shadow-green);
     border: 1px solid var(--shadow-green);
+    margin: 30px;
 }
 
 .info-card h3 {
     font-size: 1.6rem;
-    color: #111111;
+    color: var(--primary-green);
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -59,7 +60,7 @@
 }
 
 .info-card ul li {
-    color: #444;
+    color: var(--primary-green);
     line-height: 1.7;
     font-size: 1.1rem;
     margin-bottom: 12px;
@@ -126,6 +127,7 @@
 
 .benefit-icon {
     font-size: 2.5rem;
+    color: #111111;
     background: transparent;
     margin-bottom: 20px;
 }
@@ -191,7 +193,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
     background-color: #fff;
-    color: #444;
+    color: var(--primary-green);
     opacity: 0.9;
     line-height: 1.7;
 }

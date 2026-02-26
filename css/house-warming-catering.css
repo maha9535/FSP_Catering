@@ -38,6 +38,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 80px;
+    margin: 60px;
 }
 
 .do-card {
@@ -57,7 +58,7 @@
 }
 
 .do-card p {
-    color: #444;
+    color: var(--primary-green);
     line-height: 1.7;
     font-size: 1.1rem;
     margin: 0;
@@ -77,6 +78,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin: 30px;
 }
 
 .benefit-item {
@@ -100,15 +102,13 @@
 
 .benefit-icon {
     font-size: 2.5rem;
-    color: #fff;
+    color: #111111;
     margin-bottom: 20px;
-    background-color: var(--primary-green);
     width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
 }
 
 .benefit-item p {
@@ -156,7 +156,7 @@
     cursor: pointer;
     font-weight: 700;
     font-size: 1.15rem;
-    color: var(--primary-green);
+    color: #111111;
 }
 
 .faq-toggle {

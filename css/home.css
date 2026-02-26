@@ -311,7 +311,7 @@ body {
     letter-spacing: 5px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #FF6D00;
+    color: palegoldenrod;
     /* Vibrant Orange */
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease-in-out;
@@ -957,6 +957,7 @@ body {
     box-shadow: 0 10px 30px var(--shadow-green);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 1px solid var(--shadow-green);
+    margin: 5px;
 }
 
 .specialty-img {
