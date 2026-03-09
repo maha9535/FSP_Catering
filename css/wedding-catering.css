@@ -25,12 +25,12 @@
 }
 
 .highlight {
-    color: var(--primary-green);
+    color: var(--primary-lavender);
 }
 
 .highlight.bold {
     font-weight: 700;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
 }
 
 /* ACTION CARDS */
@@ -39,7 +39,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-top: 60px;
-    margin: 60px;
 }
 
 .action-card {
@@ -47,14 +46,14 @@
     padding: 40px;
     border-radius: 15px;
     text-align: left;
-    box-shadow: 0 10px 30px var(--shadow-green);
-    border: 1px solid var(--shadow-green);
+    box-shadow: 0 10px 30px var(--shadow-lavender);
+    border: 1px solid var(--shadow-lavender);
 }
 
 .action-card h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
 }
 
 .action-card ul {
@@ -67,14 +66,14 @@
     margin-bottom: 12px;
     padding-left: 25px;
     position: relative;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
 }
 
 .action-card li::before {
     content: '•';
     position: absolute;
     left: 0;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     font-size: 1.5rem;
     line-height: 1;
 }
@@ -109,7 +108,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin: 30px;
+    margin-top: 40px;
 }
 
 .benefit-item {
@@ -150,7 +149,7 @@
 
 .faq-header h2 {
     font-size: 2.5rem;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
 }
 
 .faq-list {
@@ -163,8 +162,8 @@
     margin-bottom: 15px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 15px var(--shadow-green);
-    border: 1px solid var(--shadow-green);
+    box-shadow: 0 4px 15px var(--shadow-lavender);
+    border: 1px solid var(--shadow-lavender);
 }
 
 .faq-question {
@@ -181,7 +180,7 @@
 
 .faq-toggle {
     font-size: 1.5rem;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     transition: transform 0.3s ease;
 }
 
@@ -191,7 +190,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
     background-color: #fff;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     opacity: 0.9;
     line-height: 1.6;
 }

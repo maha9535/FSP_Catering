@@ -93,10 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const greetings = ['Vanakkam', 'Hello', 'Namaste'];
+    const greetings = ['Vanakkam', 'Namaste', 'Hello'];
     let index = 0;
 
     if (greetingEl) {
+        // Find current greeting index or start from 0
+        const currentGreeting = greetingEl.textContent.trim();
+        const startIdx = greetings.indexOf(currentGreeting);
+        if (startIdx !== -1) index = startIdx;
+
         greetingEl.style.transition = 'all 0.5s ease-in-out';
 
         function rotateGreetings() {
@@ -114,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 500);
         }
 
-        setInterval(rotateGreetings, 3000);
+        setInterval(rotateGreetings, 3500);
     }
 
     // Reviews Swiper Initialization

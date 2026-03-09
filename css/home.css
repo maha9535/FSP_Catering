@@ -8,43 +8,50 @@
    ================================================ */
 
 :root {
-    /* ── GREENS ── */
-    --primary-green: #66BB6A;
-    /* Medium light green — navbar, buttons */
-    --light-green: #C8E6C9;
-    /* Very light green — card borders, inputs */
-    --dark-green: #2E7D32;
-    /* Dark green — text on white backgrounds */
-    --deep-green: #1B5E20;
-    /* Deepest green — headings, strong text */
+    /* ── LAVENDERS ── */
+    --primary-lavender: #9A8BFF;
+    /* Medium light lavender — navbar, buttons */
+    --light-lavender: #E6E6FA;
+    /* Very light lavender — card borders, inputs */
+    --dark-lavender: #6A5ACD;
+    /* Dark lavender — text on white backgrounds */
+    --deep-lavender: #483D8B;
+    /* Deepest lavender — headings, strong text */
 
     /* ── REDS ── */
     --accent-red: #EF9A9A;
     /* Light red — highlights, hover accents */
-    --dark-red: #2E7D32;
+    --dark-red: #483D8B;
     /* Dark red — text on light-red backgrounds */
 
     /* ── NEUTRALS ── */
     --bg-white: #FFFFFF;
-    --bg-light: #F1F8F1;
-    /* Very pale green-tinted white */
+    --bg-light: #F8F8FF;
+    /* Ghost White / Very pale lavender-tinted white */
 
     /* ── TEXT COLORS ── */
-    --text-dark: #1B5E20;
+    --text-dark: #311B92;
     /* For use on white/light backgrounds */
-    --text-on-green: #FFFFFF;
-    /* For use on medium/dark green backgrounds */
+    --text-on-lavender: #FFFFFF;
+    /* For use on medium/dark lavender backgrounds */
 
     /* ── BORDERS & SHADOWS ── */
-    --border-green: #C8E6C9;
-    --shadow-green: rgba(102, 187, 106, 0.22);
+    --border-lavender: #D1C4E9;
+    --shadow-lavender: rgba(154, 139, 255, 0.22);
 
-    /* Legacy aliases (so old var() references still work) */
-    --primary-sky: #66BB6A;
+    /* Legacy aliases (mapped to Lavender now) */
+    --primary-green: #9A8BFF;
+    --light-green: #E6E6FA;
+    --dark-green: #6A5ACD;
+    --deep-green: #483D8B;
+    --primary-sky: #9A8BFF;
     --primary-red: #EF9A9A;
-    --text-deep-blue: #1B5E20;
-    --border-sky: #C8E6C9;
-    --shadow-sky: rgba(102, 187, 106, 0.22);
+    --text-deep-blue: #483D8B;
+    --border-sky: #E6E6FA;
+    --shadow-sky: rgba(154, 139, 255, 0.22);
+    --shadow-green: rgba(154, 139, 255, 0.22);
+    --border-green: #D1C4E9;
+    --text-on-green: #FFFFFF;
 }
 
 body {
@@ -52,21 +59,49 @@ body {
     color: #111111;
     background-color: var(--bg-white);
     line-height: 1.6;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* GLOBAL THEME UTILITIES */
-.green-gradient {
-    background: linear-gradient(135deg, var(--primary-green), #fff, var(--primary-green));
+.lavender-gradient {
+    background: linear-gradient(135deg, var(--primary-lavender), #fff, var(--primary-lavender));
     background-size: 200% 200%;
 }
 
+.lavender-text {
+    color: var(--primary-lavender);
+}
+
+.lavender-bg {
+    background-color: var(--primary-lavender);
+    color: var(--text-on-lavender);
+}
+
+/* Maintain green classes for compatibility but change color to lavender */
+.green-gradient {
+    background: linear-gradient(135deg, var(--primary-lavender), #fff, var(--primary-lavender));
+}
+
 .green-text {
-    color: var(--primary-green);
+    color: var(--primary-lavender);
 }
 
 .green-bg {
-    background-color: var(--primary-green);
-    color: var(--text-on-green);
+    background-color: var(--primary-lavender);
+    color: var(--text-on-lavender);
 }
 
 .red-text {
@@ -101,14 +136,15 @@ body {
 .navbar.scrolled {
     background: var(--bg-white);
     padding: 15px 0;
-    border-bottom: 2px solid #66BB6A;
-    box-shadow: 0 5px 20px rgba(102, 187, 106, 0.25);
+    border-bottom: 2px solid #9A8BFF;
+    box-shadow: 0 5px 20px rgba(154, 139, 255, 0.25);
 }
 
 .nav-container {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 20px;
+    /* Reduced from 50px for better mobile fit */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,8 +273,8 @@ body {
         top: 0;
         height: 100vh;
         width: 70%;
-        background: var(--accent-red);
-        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -295,8 +331,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    /* Neutral transparency */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+    /* Darker gradient for better text pop */
     z-index: -1;
 }
 
@@ -311,19 +347,19 @@ body {
     letter-spacing: 5px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: palegoldenrod;
-    /* Vibrant Orange */
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    color: var(--light-lavender);
+    /* Soft Lavender glow */
+    text-shadow: 0 5px 25px var(--shadow-lavender), 2px 2px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.5s ease-in-out;
 }
 
 .brand-title {
     font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #ffffff;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 4px 15px var(--shadow-lavender), 2px 2px 10px rgba(0, 0, 0, 0.5);
     margin-top: 10px;
     text-align: center;
     width: 100%;
@@ -341,7 +377,7 @@ body {
     }
 
     #greeting {
-        font-size: 1.2rem;
+        font-size: 2.8rem;
     }
 }
 
@@ -364,9 +400,9 @@ body {
 
 .hero-btn:hover {
     transform: translateY(-5px);
-    background: #388E3C;
-    /* Darker blue but still sky blue spectrum */
-    box-shadow: 0 15px 35px rgba(102, 187, 106, 0.38);
+    background: #7E57C2;
+    /* Darker lavender but still in the spectrum */
+    box-shadow: 0 15px 35px rgba(154, 139, 255, 0.38);
 }
 
 /* HOW IT WORKS SECTION */
@@ -379,7 +415,6 @@ body {
 .how-it-works .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .section-title {
@@ -466,7 +501,8 @@ body {
 .step-number {
     font-size: 4rem;
     font-weight: 900;
-    color: rgba(255, 77, 77, 0.1);
+    color: rgba(154, 139, 255, 0.15);
+    /* Light Lavender for theme consistency */
     position: absolute;
     top: 20px;
     right: 30px;
@@ -524,12 +560,12 @@ body {
 
 /* Swiper Customize */
 .swiper-pagination-bullet {
-    background: var(--accent-red) !important;
+    background: var(--primary-green) !important;
     opacity: 0.3;
 }
 
 .swiper-pagination-bullet-active {
-    background: var(--accent-red) !important;
+    background: var(--primary-green) !important;
     opacity: 1;
     width: 30px !important;
     border-radius: 5px !important;
@@ -789,7 +825,7 @@ body {
 .icon-rainbow {
     width: 80px;
     height: 80px;
-    background: var(--accent-red);
+    background: var(--primary-green);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -920,7 +956,7 @@ body {
 }
 
 .review-pagination .swiper-pagination-bullet-active {
-    background: var(--accent-red) !important;
+    background: var(--primary-green) !important;
 }
 
 @media (max-width: 768px) {
@@ -1002,13 +1038,50 @@ body {
     transform: scale(1.1);
 }
 
+/* ================================================
+   GLOBAL RESPONSIVENESS REFINEMENTS
+   ================================================ */
 @media (max-width: 768px) {
+    section {
+        padding: 60px 0 !important;
+        /* Unified section padding for mobile */
+    }
+
+    .section-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 40px !important;
+    }
+
+    .container {
+        padding: 0 15px !important;
+        /* Slightly tighter containers on mobile */
+    }
+
+    .main-hero {
+        height: 80vh !important;
+        /* Slightly shorter hero on mobile */
+    }
+
+    .brand-title {
+        font-size: 1.5rem !important;
+    }
+
     .specialties-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+        gap: 20px !important;
     }
 
     .specialty-img {
-        height: 200px;
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem !important;
+    }
+
+    .brand-main {
+        font-size: 1.2rem !important;
     }
 }

@@ -25,7 +25,7 @@
 }
 
 .highlight {
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     font-weight: 600;
 }
 
@@ -42,14 +42,13 @@
     padding: 40px;
     border-radius: 12px;
     text-align: left;
-    box-shadow: 0 5px 25px var(--shadow-green);
-    border: 1px solid var(--shadow-green);
-    margin: 30px;
+    box-shadow: 0 5px 25px var(--shadow-lavender);
+    border: 1px solid var(--shadow-lavender);
 }
 
 .info-card h3 {
     font-size: 1.6rem;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -60,7 +59,7 @@
 }
 
 .info-card ul li {
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     line-height: 1.7;
     font-size: 1.1rem;
     margin-bottom: 12px;
@@ -70,7 +69,7 @@
 
 .info-card ul li::before {
     content: "•";
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -110,7 +109,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: -120px;
-    padding: 0 40px;
+    padding: 0 20px;
     position: relative;
     z-index: 2;
 }
@@ -119,13 +118,13 @@
     background: #fff;
     padding: 40px 25px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px var(--shadow-green);
+    box-shadow: 0 10px 30px var(--shadow-lavender);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid var(--shadow-green);
+    border: 1px solid var(--shadow-lavender);
 }
 
 .benefit-item:hover {
@@ -159,7 +158,7 @@
 
 .faq-header h2 {
     font-size: 2.5rem;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
 }
 
 .faq-list {
@@ -172,8 +171,8 @@
     margin-bottom: 15px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 15px var(--shadow-green);
-    border: 1px solid var(--shadow-green);
+    box-shadow: 0 4px 15px var(--shadow-lavender);
+    border: 1px solid var(--shadow-lavender);
 }
 
 .faq-question {
@@ -189,7 +188,7 @@
 
 .faq-toggle {
     font-size: 1.5rem;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     transition: transform 0.3s ease;
 }
 
@@ -199,7 +198,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
     background-color: #fff;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     opacity: 0.8;
     line-height: 1.7;
 }

@@ -19,7 +19,7 @@
 }
 
 .footer-brand h2 {
-    color: var(--primary-green, #66BB6A);
+    color: var(--primary-lavender, #9A8BFF);
     font-size: 1.8rem;
     margin-bottom: 20px;
     font-weight: 800;
@@ -50,7 +50,7 @@
     bottom: 0;
     width: 40px;
     height: 2px;
-    background-color: var(--primary-green, #66BB6A);
+    background-color: var(--primary-lavender, #9A8BFF);
 }
 
 .footer-links ul,
@@ -73,7 +73,7 @@
 
 .footer-links ul li a:hover,
 .footer-services ul li a:hover {
-    color: var(--primary-green, #66BB6A);
+    color: var(--primary-lavender, #9A8BFF);
     padding-left: 5px;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .contact-info-item a:hover {
-    color: var(--primary-green, #66BB6A);
+    color: var(--primary-lavender, #9A8BFF);
 }
 
 .footer-bottom {

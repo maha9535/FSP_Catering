@@ -1,14 +1,14 @@
 ﻿:root {
-    --primary-sky: #66BB6A;
-    --text-deep-blue: #1B5E20;
+    --primary-lavender: #9A8BFF;
+    --text-deep-lavender: #483D8B;
     --bg-white: #ffffff;
-    --text-muted: #4a90e2;
+    --text-muted: #6A5ACD;
 }
 
 /* SERVICES PAGE STYLES */
 
 .page-header {
-    background-color: var(--primary-green);
+    background-color: var(--primary-lavender);
     padding: 80px 0;
     text-align: center;
     position: relative;
@@ -116,7 +116,6 @@
     display: flex;
     flex-direction: column;
     border: 1px solid var(--border-light);
-    margin: 10px;
 }
 
 .service-card:hover {
@@ -168,7 +167,7 @@
     bottom: 0;
     width: 40px;
     height: 3px;
-    background-color: var(--primary-green);
+    background-color: var(--primary-lavender);
     transition: width 0.3s ease;
 }
 
@@ -185,7 +184,7 @@
 
 .read-more {
     display: inline-block;
-    color: var(--primary-green);
+    color: var(--primary-lavender);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;

@@ -9,8 +9,18 @@
     background: #fff;
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px var(--shadow-green);
-    border: 1px solid var(--shadow-green);
+    box-shadow: 0 10px 30px var(--shadow-lavender);
+    border: 1px solid var(--shadow-lavender);
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 30px 20px;
+    }
+
+    .form-header h2 {
+        font-size: 2rem;
+    }
 }
 
 .form-header {
@@ -62,7 +72,7 @@
 .form-group select,
 .form-group textarea {
     padding: 12px 15px;
-    border: 1px solid var(--shadow-green);
+    border: 1px solid var(--shadow-lavender);
     border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
@@ -74,12 +84,12 @@
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #66BB6A;
-    box-shadow: 0 0 0 3px rgba(102, 187, 106, 0.18);
+    border-color: #9A8BFF;
+    box-shadow: 0 0 0 3px rgba(154, 139, 255, 0.18);
 }
 
 .submit-btn {
-    background: #66BB6A;
+    background: #9A8BFF;
     color: #fff;
     padding: 15px 30px;
     border: none;
@@ -94,5 +104,5 @@
 .submit-btn:hover {
     opacity: 0.9;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px var(--shadow-green);
+    box-shadow: 0 5px 15px var(--shadow-lavender);
 }
